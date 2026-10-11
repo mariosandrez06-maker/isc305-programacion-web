@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conoce tu Tierra</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor barra">
+        <h1>HonduTurismo</h1>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos y Rutas</a></li>
+          <li><a href="cultura.html">Cultura y Gastronomía</a></li>
+          <li><a href="reservaciones.html">Reservaciones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <div class="contenedor">
+        <h2>Destinos y rutas turísticas</h2>
+        <p>Cuatro rutas para conocer Honduras. Cada destino incluye su descripción física, sus atractivos principales, el nivel de dificultad de acceso y los tiempos de traslado desde Tegucigalpa y San Pedro Sula.</p>
+      </div>
+    </section>
+
+    <section class="seccion ruta">
+      <div class="contenedor">
+        <div class="ruta-encabezado">
+          <h2>Ruta Maya y Arqueología</h2>
+        </div>
+        <p class="intro">Ciudades de piedra, cuevas funerarias y lagos donde el pasado precolombino sigue presente.</p>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/copan2.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Parque Arqueológico de Copán Ruinas</h3>
+            <p class="etiquetas">
+              <span class="chip dif-baja">Acceso: baja dificultad</span>
+              <span class="chip">Patrimonio Mundial UNESCO</span>
+            </p>
+            <p><strong>Descripción física:</strong> complejo de plazas, templos y acrópolis rodeado de bosque en un valle fresco, junto al pueblo colonial de Copán Ruinas, en el occidente del país.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Escalinata de los Jeroglíficos y Gran Plaza con estelas esculpidas</li>
+              <li>Museo de Escultura Maya y túneles arqueológicos</li>
+              <li>Observación de guacamayas rojas en el entorno del parque</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera pavimentada hasta el pueblo; caminatas cortas y planas dentro del parque.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=copan">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/lago.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Lago de Yojoa y sitio Los Naranjos</h3>
+            <p class="etiquetas">
+              <span class="chip dif-baja">Acceso: baja dificultad</span>
+              <span class="chip">Arqueología y aves</span>
+            </p>
+            <p><strong>Descripción física:</strong> el mayor lago natural del país, rodeado de montañas, fincas de café y parques nacionales, en la zona central-occidental.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Sitio arqueológico Los Naranjos, con montículos y museo de sitio</li>
+              <li>Observación de aves en el lago y en el Parque Nacional Cerro Azul Meámbar</li>
+              <li>Cascadas cercanas y gastronomía de pescado fresco</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera principal pavimentada (CA-5); tramos cortos de terracería en senderos.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=yojoa">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/cuevasTalgua2.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Cuevas de Talgua (Catacamas, Olancho)</h3>
+            <p class="etiquetas">
+              <span>Acceso: dificultad media</span>
+              <span>Cueva funeraria precolombina</span>
+            </p>
+            <p><strong>Descripción física:</strong> sistema de cuevas calizas en un valle del departamento de Olancho, en el oriente del país.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Cueva funeraria con restos humanos de hace unos tres mil años</li>
+              <li>Formaciones de calcita y recorridos guiados</li>
+              <li>Paisaje ganadero y montañoso de Olancho</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> trayecto largo por carretera; el ingreso a la cueva requiere guía local y calzado adecuado.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=talgua">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Ruta Maya y Arqueología: altitudes, distancias y tiempos de traslado aproximados</caption>
+            <thead>
+              <tr>
+                <th>Destino</th>
+                <th>Altitud (msnm)</th>
+                <th>Distancia desde Tegucigalpa</th>
+                <th>Tiempo desde Tegucigalpa</th>
+                <th>Distancia desde San Pedro Sula</th>
+                <th>Tiempo desde San Pedro Sula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Copán Ruinas</th><td>600</td><td>~ 400 km</td><td>6 h 30 min</td><td>~ 170 km</td><td>3 h</td></tr>
+              <tr><th>Lago de Yojoa / Los Naranjos</th><td>650</td><td>~ 180 km</td><td>3 h</td><td>~ 75 km</td><td>1 h 15 min</td></tr>
+              <tr><th>Cuevas de Talgua (Catacamas)</th><td>450</td><td>~ 210 km</td><td>4 h</td><td>~ 420 km</td><td>7 h</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion ruta">
+      <div class="contenedor">
+        <div class="ruta-encabezado">
+          <h2 id="t-lenca">Ruta Lenca y Pueblos con Encanto</h2>
+        </div>
+        <p class="intro">Pueblos de teja y empedrado, cerámica ancestral y paisajes de altura en el corazón de la cultura lenca.</p>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/gracias2.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Gracias, Lempira</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Pueblo colonial</span>
+            </p>
+            <p><strong>Descripción física:</strong> ciudad colonial al pie del Parque Nacional Celaque, con calles empedradas, iglesias antiguas y clima agradable.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Fortaleza de San Cristóbal con vista a la ciudad</li>
+              <li>Aguas termales cercanas</li>
+              <li>Cerámica y artesanías lencas; punto de partida a Celaque</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera pavimentada con tramos de montaña y curvas.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=gracias">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/intibuca.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>La Esperanza e Intibucá</h3>
+            <p>
+              <span>Acceso: dificultad media</span>
+              <span>Cultura lenca viva</span>
+            </p>
+            <p><strong>Descripción física:</strong> ciudades gemelas de tierras altas, a unos 1,700 metros, con clima fresco, bosques de pino y campos de cultivo.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Mercados y comunidades lencas con tejidos y cerámica</li>
+              <li>Paisajes de montaña y bosques de pino</li>
+              <li>Gastronomía de altura y café de la región</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera de montaña pavimentada, con neblina y frío en las madrugadas.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=esperanza">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/valle-de-angeles.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Valle de Ángeles y Santa Lucía</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Artesanías</span>
+            </p>
+            <p><strong>Descripción física:</strong> pueblos coloniales de montaña a pocos kilómetros de la capital, con casas de adobe y teja, plazas y miradores.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Talleres y tiendas de artesanía en madera, cuero y cerámica</li>
+              <li>Plazas coloniales, iglesias y miradores</li>
+              <li>Cafés y comida típica, ideales para una escapada de un día</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera corta y pavimentada desde Tegucigalpa.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=valle">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Ruta Lenca y Pueblos con Encanto: altitudes, distancias y tiempos de traslado aproximados</caption>
+            <thead>
+              <tr>
+                <th>Destino</th>
+                <th>Altitud (msnm)</th>
+                <th>Distancia desde Tegucigalpa</th>
+                <th>Tiempo desde Tegucigalpa</th>
+                <th>Distancia desde San Pedro Sula</th>
+                <th>Tiempo desde San Pedro Sula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Gracias, Lempira</th><td>800</td><td>~ 300 km</td><td>5 h</td><td>~ 200 km</td><td>3 h 30 min</td></tr>
+              <tr><th>La Esperanza e Intibucá</th><td>1,700</td><td>~ 190 km</td><td>3 h 30 min</td><td>~ 200 km</td><td>4 h</td></tr>
+              <tr><th>Valle de Ángeles y Santa Lucía</th><td>1,300</td><td>~ 22 km</td><td>40 min</td><td>~ 260 km</td><td>4 h 30 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion ruta">
+      <div class="contenedor">
+        <div class="ruta-encabezado">
+          <h2>Ecoturismo y Bosques Nublados</h2>
+        </div>
+        <p>Senderos entre niebla, cascadas y aves, en parques nacionales que conservan la biodiversidad del país.</p>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/celaque2.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Parque Nacional Montaña de Celaque</h3>
+            <p>
+              <span>Acceso: alta dificultad</span>
+              <span>Bosque nublado</span>
+            </p>
+            <p><strong>Descripción física:</strong> macizo montañoso cubierto de bosque nublado, nacimiento de varios ríos; incluye el Cerro Las Minas, la cima más alta de Honduras, con unos 2,850 metros.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Senderos entre helechos arborescentes y cascadas</li>
+              <li>Avistamiento de aves como el quetzal</li>
+              <li>Campamento y ascenso guiado al Cerro Las Minas</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> caminatas exigentes con pendientes fuertes, lluvia frecuente y frío; se recomienda buena condición física y guía.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=celaque">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/picobonito2.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Parque Nacional Pico Bonito</h3>
+            <p>
+              <span>Acceso: dificultad media</span>
+              <span>Selva y ríos</span>
+            </p>
+            <p><strong>Descripción física:</strong> montaña de selva tropical húmeda que sube desde el nivel del Caribe hasta unos 2,435 metros, junto a La Ceiba.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Rafting y descenso en el río Cangrejal</li>
+              <li>Senderos con cascadas y pozas naturales</li>
+              <li>Observación de aves y fauna de selva</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera pavimentada hasta La Ceiba; senderos con humedad, lodo y cruces de río.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=pico-bonito">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/latigra.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Parque Nacional La Tigra</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Bosque nublado cercano a la capital</span>
+            </p>
+            <p><strong>Descripción física:</strong> primer parque nacional del país, bosque nublado de montaña que abastece de agua a la capital.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Senderos señalizados de dificultad variada</li>
+              <li>Aves, orquídeas y miradores</li>
+              <li>Vestigios de antigua actividad minera</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera de montaña, parte de terracería; se recomienda vehículo alto o transporte organizado.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=la-tigra">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Ecoturismo y Bosques Nublados: altitudes, distancias y tiempos de traslado aproximados</caption>
+            <thead>
+              <tr>
+                <th>Destino</th>
+                <th>Altitud (msnm)</th>
+                <th>Distancia desde Tegucigalpa</th>
+                <th>Tiempo desde Tegucigalpa</th>
+                <th>Distancia desde San Pedro Sula</th>
+                <th>Tiempo desde San Pedro Sula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Parque Nacional Montaña de Celaque</th><td>1,500 – 2,850</td><td>~ 310 km</td><td>5 h 30 min</td><td>~ 200 km</td><td>3 h 45 min</td></tr>
+              <tr><th>Parque Nacional Pico Bonito</th><td>100 – 2,435</td><td>~ 440 km</td><td>6 h 30 min</td><td>~ 200 km</td><td>3 h</td></tr>
+              <tr><th>Parque Nacional La Tigra</th><td>1,800 – 2,270</td><td>~ 22 km</td><td>1 h</td><td>~ 260 km</td><td>4 h 30 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion ruta">
+      <div class="contenedor">
+        <div class="ruta-encabezado">
+          <h2>Caribe y Arrecifes</h2>
+        </div>
+        <p>Islas coralinas, playas de cocoteros y comunidades garífunas en el litoral atlántico.</p>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/roatan.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Roatán, Islas de la Bahía</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Arrecife coralino</span>
+            </p>
+            <p><strong>Descripción física:</strong> isla alargada de colinas verdes y playas de arena blanca, bordeada por un arrecife de coral a pocos metros de la costa.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Buceo y esnórquel en el Sistema Arrecifal Mesoamericano</li>
+              <li>Playas de West Bay y West End</li>
+              <li>Comunidades garífunas y de habla inglesa</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> vuelos directos o ferry desde La Ceiba; una vez en la isla hay carretera y transporte.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=roatan">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/utila.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Utila, Islas de la Bahía</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Buceo y tiburón ballena</span>
+            </p>
+            <p><strong>Descripción física:</strong> isla pequeña y plana, de ambiente tranquilo y aguas cristalinas, muy popular entre buzos.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Cursos y salidas de buceo para todos los niveles</li>
+              <li>Posible avistamiento de tiburón ballena en temporada</li>
+              <li>Cayos y playas aptas para esnórquel</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> ferry o avioneta desde La Ceiba; se recomienda reservar con anticipación en temporada alta.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=utila">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <article class="destino">
+          <div><img src="imagenesUtilizadas/tela.jpg" class="imagenes"></div>
+          <div class="destino-cuerpo">
+            <h3>Tela, Punta Sal y comunidades garífunas</h3>
+            <p>
+              <span>Acceso: baja dificultad</span>
+              <span>Cultura garífuna</span>
+            </p>
+            <p><strong>Descripción física:</strong> costa de playas largas, manglares y lagunas en el litoral norte, con aldeas garífunas de casas junto al mar.</p>
+            <p><strong>Principales atractivos:</strong></p>
+            <ul>
+              <li>Parque Nacional Jeannette Kawas (Punta Sal): playa, manglar y fauna</li>
+              <li>Jardín Botánico Lancetilla</li>
+              <li>Música, danza y gastronomía garífuna</li>
+            </ul>
+            <p><strong>Dificultad de acceso:</strong> carretera pavimentada; lancha para algunos tramos del parque.</p>
+            <a class="boton boton-sec" href="reservaciones.html?destino=tela">Solicitar este tour</a>
+          </div>
+        </article>
+
+        <div class="tabla-contenedor">
+          <table>
+            <caption>Caribe y Arrecifes: altitudes, distancias y tiempos de traslado aproximados</caption>
+            <thead>
+              <tr>
+                <th>Destino</th>
+                <th>Altitud (msnm)</th>
+                <th>Distancia desde Tegucigalpa</th>
+                <th>Tiempo desde Tegucigalpa</th>
+                <th>Distancia desde San Pedro Sula</th>
+                <th>Tiempo desde San Pedro Sula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Roatán</th><td>0 – 235</td><td>~ 420 km hasta La Ceiba, más ferry</td><td>~ 8 h por tierra y mar, o ~ 1 h en avión</td><td>~ 200 km hasta La Ceiba, más ferry</td><td>~ 4 h 30 min por tierra y mar, o ~ 45 min en avión</td></tr>
+              <tr><th>Utila</th><td>0 – 75</td><td>~ 420 km hasta La Ceiba, más ferry</td><td>~ 7 h 30 min por tierra y mar</td><td>~ 200 km hasta La Ceiba, más ferry</td><td>~ 4 h por tierra y mar</td></tr>
+              <tr><th>Tela y Punta Sal</th><td>5</td><td>~ 380 km</td><td>5 h 30 min</td><td>~ 90 km</td><td>1 h 30 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitio-footer">
+    <div class="contenedor pie-grid">
+      <div>
+        <p class="pie-marca">Honduras Viva</p>
+        <p>Iniciativa de promoción turística y ecoturismo para dar a conocer el patrimonio histórico, natural y cultural de Honduras.</p>
+      </div>
+      <div>
+        <h2>Emergencias</h2>
+        <p>Línea nacional de emergencias: <strong>911</strong></p>
+        <p><a href="contacto.html#emergencias">Ver más teléfonos de asistencia</a></p>
+      </div>
+    </div>
+    <p class="derechos">© 2026 Honduras Viva. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

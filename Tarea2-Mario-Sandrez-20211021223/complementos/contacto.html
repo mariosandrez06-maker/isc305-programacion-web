@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conoce tu Tierra</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor barra">
+            <h1>HonduTurismo</h1>
+            <nav class="nav-principal" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos y Rutas</a></li>
+                    <li><a href="cultura.html">Cultura y Gastronomía</a></li>
+                    <li><a href="reservaciones.html">Reservaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="encabezado-pagina">
+            <div class="contenedor">
+                <h1>Contacto y asistencia al turista</h1>
+                <p>Estamos para ayudarle antes, durante y después de su viaje: oficinas de información, líneas de emergencia y atención en línea.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <h2>Oficinas de información turística</h2>
+                <p>Puntos de atención en los principales polos urbanos y turísticos del país.</p>
+                <div class="rejilla rejilla-3">
+                    <article class="tarjeta oficina">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Tegucigalpa</h3>
+                            <p>
+                                Centro Histórico, cerca de la Plaza Morazán<br>
+                                Distrito Central, Francisco Morazán<br>
+                                Tel.: +504 9988-7766
+                            </p>
+                            <p >Horario: lunes a sábado, 8:00 a 17:00.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta oficina">
+                        <div class="tarjeta-cuerpo">
+                            <h3>San Pedro Sula</h3>
+                            <p>
+                                Zona céntrica, cerca del Parque Central<br>
+                                San Pedro Sula, Cortés<br>
+                                Tel.:+504 5544-3322</a>
+                            </p>
+                            <p>Horario: lunes a sábado, 8:00 a 17:00.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta oficina">
+                        <div class="tarjeta-cuerpo">
+                            <h3>La Ceiba</h3>
+                            <p>
+                                Zona céntrica, cerca del malecón<br>
+                                La Ceiba, Atlántida<br>
+                                Tel.: +504 1100-0011
+                            </p>
+                            <p>Horario: lunes a sábado, 8:00 a 17:00.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta oficina">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Copán Ruinas</h3>
+                            <p>
+                                Frente al Parque Central<br>
+                                Copán Ruinas, Copán<br>
+                                Tel.: +504 2233-4455
+                            </p>
+                            <p>Horario: todos los días, 8:00 a 17:00.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta oficina">
+                        <div class="tarjeta-cuerpo">
+                            <h3>Roatán</h3>
+                            <p>
+                                Zona de West End / Coxen Hole<br>
+                                Roatán, Islas de la Bahía<br>
+                                Tel.: +504 6677-8899
+                            </p>
+                            <p>Horario (ejemplo): lunes a sábado, 8:00 a 17:00.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <h2>Consultas, comentarios y asistencia ciudadana</h2>
+                <p>Escríbanos y le responderemos a la brevedad. Los campos marcados con <span class="req" aria-hidden="true">*</span> son obligatorios.</p>
+
+                <form class="formulario" action="#" method="post">
+                    <fieldset>
+                        <legend>Su mensaje</legend>
+                        <div class="fila">
+                            <div class="campo">
+                                <label>Nombre completo</label>
+                                <input type="text" name="nombre">
+                            </div>
+                            <div class="campo">
+                                <label">Correo electrónico</label>
+                                <input type="email" name="correo">
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="campo">
+                                <label>Tipo de solicitud</label>
+                                <select name="tipo" >
+                                    <option value="">Seleccione…</option>
+                                    <option value="consulta">Consulta general</option>
+                                    <option value="comentario">Comentario o sugerencia</option>
+                                    <option value="asistencia">Solicitud de asistencia ciudadana</option>
+                                    <option value="queja">Queja o reclamo</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label>Asunto</label>
+                                <input type="text" name="asunto">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                        <label class="opcion">
+                            <input type="checkbox" name="datos">
+                            <p><strong>Autorizo el uso de mis datos únicamente para responder esta solicitud</strong></p>
+                        </label>
+                    </fieldset>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton boton-azul">Enviar mensaje</button>
+                        <button type="reset" class="boton boton-sec">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="sitio-footer">
+        <div class="contenedor pie-grid">
+            <div>
+                <p class="pie-marca">Honduras Viva</p>
+                <p>Iniciativa de promoción turística y ecoturismo para dar a conocer el patrimonio histórico, natural y cultural de Honduras.</p>
+            </div>
+            <p>© 2026 Conoce tu Tierra. Todos los derechos reservados. <br>
+                Elaborado por: Mario David Sandrez Viera <br>
+                Correo: mario.sandrez@unah.hn
+            </p>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conoce tu Tierra</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor barra">
+            <h1>HonduTurismo</h1>
+            <nav class="nav-principal" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos y Rutas</a></li>
+                    <li><a href="cultura.html">Cultura y Gastronomía</a></li>
+                    <li><a href="reservaciones.html">Reservaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bienvenida">
+            <div class="contenedor">
+                    <h2>Reservaciones y solicitud de tours</h2>
+                    <p>Complete el formulario y nuestro equipo de atención al turista le responderá para confirmar disponibilidad, costos y detalles del recorrido.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                 <h2>Formulario de solicitud de tour</h2>
+                <form class="formulario">
+                    <fieldset>
+                        <legend>1. Datos del viajero titular</legend>
+                        <div class="campo">
+                            <label>Nombre completo</label>
+                            <input type="text" name="nombre" placeholder="Ej.: María Fernanda López">
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono" placeholder="+504 1111-9999">
+                        </div>
+                        <div class="campo">
+                            <label>Correo electrónico</label>
+                            <input type="email" name="correo" placeholder="nombre@correo.com">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. Circuito turístico</legend>
+                        <div class="campo">
+                            <label>Circuito o destino deseado</label>
+                            <select name="destino">
+                                <option value="">Seleccione un destino…</option>
+                                <optgroup label="Ruta Maya y Arqueología">
+                                    <option value="copan">Parque Arqueológico de Copán Ruinas</option>
+                                    <option value="yojoa">Lago de Yojoa y sitio Los Naranjos</option>
+                                    <option value="talgua">Cuevas de Talgua (Catacamas)</option>
+                                </optgroup>
+                                <optgroup label="Ruta Lenca y Pueblos con Encanto">
+                                    <option value="gracias">Gracias, Lempira</option>
+                                    <option value="esperanza">La Esperanza e Intibucá</option>
+                                    <option value="valle">Valle de Ángeles y Santa Lucía</option>
+                                </optgroup>
+                                <optgroup label="Ecoturismo y Bosques Nublados">
+                                    <option value="celaque">Parque Nacional Montaña de Celaque</option>
+                                    <option value="pico-bonito">Parque Nacional Pico Bonito</option>
+                                    <option value="la-tigra">Parque Nacional La Tigra</option>
+                                </optgroup>
+                                <optgroup label="Caribe y Arrecifes">
+                                    <option value="roatan">Roatán, Islas de la Bahía</option>
+                                    <option value="utila">Utila, Islas de la Bahía</option>
+                                    <option value="tela">Tela, Punta Sal y comunidades garífunas</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label>Fecha prevista de inicio</label>
+                            <input type="date" name="fecha-inicio">
+                        </div>
+                        <div class="campo">
+                            <label>Fecha prevista de retorno</label>
+                            <input type="date" name="fecha-retorno">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>3. Número de visitantes</legend>
+                        <div class="campo">
+                            <label>Adultos (18 años o más)</label>
+                            <input type="number" name="adultos" value="1">
+                        </div>
+                        <div class="campo">
+                            <label>Menores de edad</label>
+                            <input type="number" name="menores" value="0">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>4. Servicio y hospedaje</legend>
+                        <div class="campo">
+                            <label>Nivel de servicio</label>
+                            <select name="nivel">
+                                <option value="">Seleccione un nivel…</option>
+                                <option value="basico">Básico: transporte y guía</option>
+                                <option value="confort">Confort: transporte, guía, hospedaje y alimentación</option>
+                                <option value="premium">Premium: todo incluido con actividades especiales</option>
+                            </select>
+                        </div>
+                        <p><strong>Tipo de hospedaje</strong></p>
+                        <label class="opcion"><input type="radio" name="hospedaje" value="cabana">Cabaña ecológica</label>
+                        <label class="opcion"><input type="radio" name="hospedaje" value="hotel-colonial">Hotel colonial</label>
+                        <label class="opcion"><input type="radio" name="hospedaje" value="campamento">Campamento de montaña</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>5. Accesibilidad e idioma</legend>
+                        <label class="opcion"><input type="checkbox" name="guia-bilingue" value="si">Requiero guía bilingüe (español e inglés)</label>
+                        <label class="opcion"><input type="checkbox" name="accesibilidad-movilidad" value="si">Necesito accesibilidad para movilidad reducida</label>
+                        <label class="opcion"><input type="checkbox" name="accesibilidad-sensorial" value="si">Necesito apoyo visual o auditivo</label>
+                        <div class="campo">
+                            <label>Observaciones (alergias, dieta, otras necesidades)</label>
+                            <textarea id="observaciones" name="observaciones" rows="5" placeholder="Opcional."></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>6. Compromiso con la conservación</legend>
+                        <p>Para proteger los espacios que visitaremos, todos los viajeros se comprometen a:</p>
+                        <ul>
+                            <li>No dejar basura y llevar de vuelta sus residuos.</li>
+                            <li>Mantenerse en los senderos y respetar la fauna y flora.</li>
+                            <li>No extraer plantas, animales ni piezas arqueológicas.</li>
+                            <li>Respetar a las comunidades, su cultura y sus espacios.</li>
+                        </ul>
+                        <label class="opcion"><input type="checkbox" name="compromiso">Confirmo y acepto los compromisos de conservación ecológica y protección del patrimonio</label>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit" class="boton boton-azul">Enviar solicitud</button>
+                        <button type="reset" class="boton">Limpiar formulario</button>
+                    </p>
+                </form>
+
+                <div class="lateral">
+                    <h2>Antes de enviar</h2>
+                    <ul>
+                        <li>Elija un destino en <a href="destinos.html">Destinos y Rutas</a> para ver tiempos de traslado.</li>
+                        <li>Las fechas son tentativas; confirmaremos disponibilidad por correo o teléfono.</li>
+                        <li>Los menores deben viajar acompañados por un adulto responsable.</li>
+                        <li>¿Dudas? Visite <a href="contacto.html">Contacto y asistencia</a>.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="sitio-footer">
+        <div class="contenedor pie-grid">
+            <div>
+                <p class="pie-marca">Honduras Viva</p>
+                <p>Iniciativa de promoción turística y ecoturismo para dar a conocer el patrimonio histórico, natural y cultural de Honduras.</p>
+            </div>
+
+            <div>
+                <h2>Emergencias</h2>
+                <p>Línea nacional de emergencias: <strong>911</strong></p>
+                <p><a href="contacto.html#emergencias">Ver más teléfonos de asistencia</a></p>
+            </div>
+        </div>
+        <p class="derechos">© 2026 Honduras Viva. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
