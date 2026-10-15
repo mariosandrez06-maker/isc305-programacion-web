@@ -21,9 +21,9 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="catalogo.html">Catalogo</a></li>
-                    <li><a href="">Ofertas del Mes</a></li>
+                    <li><a href="ofertas.html">Ofertas del Mes</a></li>
                     <li><a href="cotizaciones.html">Cotizaciones</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <a href="">Cotizar por WahatsApp</a>
@@ -32,17 +32,17 @@
             <div>
                 <div>
                     <div>
-                        <h1>DEINSA HONDURAS-Cotizaciones</h2>
+                        <h1>DEINSA HONDURAS-Cotizaciones</h1>
                     </div>
 
-                    <form action="">
+                    <form action="#" method="post">
                         <div>
                             <span>Cotizaciones</span> 
                             <label for=""><p>Cantidad de Unidades</p></label>
                             <input type="text" name="" id="">
                             <label for=""><p>Seleccione el producto</p></label>
-                            <select class="form-select" id="volumen" required>
-                                            <option value="" disabled selected>Seleccione un producto...</option>
+                            <select class="form-select">
+                                            <option value="" >Seleccione un producto...</option>
                                             <option value="1">Panel Solar TOPCon 580W - L. 3,650</option>
                                             <option value="2">Inversor Híbrido 15 kW - L. 98,200</option>
                                             <option value="3">Arrancador Suave 75 HP - L. 46,900</option>
@@ -50,21 +50,90 @@
                             </select>
                             <label for=""><p>Seleccione la ciudad de entrega</p></label>
                             <select name="" id="">
-                                <option value="" disabled selected>Seleccione la ciudad de entrega...</option>
+                                <option value="" >Seleccione la ciudad de entrega...</option>
                                 <option value="1">San Pedro Sula - flete L.500</option>
                                 <option value="2">tegucigalpa - flete L.1200</option>
                                 <option value="3">Otro Lugar - flete L.2000</option>
                             </select>
                             <div>
-                                <button>Calcular Presupuesto</button>
+                                <p><strong>Descuento comercial del 8% automático en órdenes de 5 o más unidades.</strong></p>
+                                <button type="submit">Calcular Presupuesto</button>
                             </div>
                             <div>
                                 <label for="">Resultado</label><input type="text">
                             </div>
                         </div>
                     </form>
-
                 </div>
+            </div>
+
+            <div>
+                <h2>Tabla Comparativa de Especificaciones Técnicas</h2>
+ 
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Equipo Industrial</th>
+                            <th>Tensión Nominal</th>
+                            <th>Capacidad</th>
+                            <th>Norma Técnica</th>
+                            <th>Estado de Homologación ENEE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TRF-150</td>
+                            <td>Transformador Pad-Mounted 150 kVA</td>
+                            <td>13,800 V</td>
+                            <td>150 kVA</td>
+                            <td>IEEE</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>PSL-580</td>
+                            <td>Panel Solar TOPCon 580W</td>
+                            <td>44 V</td>
+                            <td>580 W</td>
+                            <td>UL</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>INV-15H</td>
+                            <td>Inversor Híbrido 15 kW</td>
+                            <td>220 V</td>
+                            <td>15 kW</td>
+                            <td>IEEE</td>
+                            <td><span class="estado pendiente">En trámite</span></td>
+                        </tr>
+                        <tr>
+                            <td>ARR-75</td>
+                            <td>Arrancador Suave 75 HP</td>
+                            <td>480 V</td>
+                            <td>75 HP</td>
+                            <td>UL</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>CAB-400</td>
+                            <td>Cable de Cobre 4/0 AWG</td>
+                            <td>600 V</td>
+                            <td>230 A</td>
+                            <td>ASTM</td>
+                            <td><span class="estado rechazado">No homologado</span></td>
+                        </tr>
+                        <tr>
+                            <td>CDC-225</td>
+                            <td>Centro de Carga NEMA 3R</td>
+                            <td>240 V</td>
+                            <td>225 A</td>
+                            <td>UL</td>
+                            <td><span class="estado pendiente">En trámite</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             </div>
         </main>
         <footer>
