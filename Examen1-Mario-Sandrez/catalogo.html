@@ -4,29 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DEINSA HONDURAS</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <section>
-                <div>
-                    <p>Telefonos y Horarios de Atencion al cliente</p>
-                    <p>Horario Lun-Vie 8am - 5pm</p>
+        <header class="sticky-top bg-primary shadow-sm d-lg-flex flex-lg-wrap align-items-lg-center">
+            <section class="w-100 bg-dark text-light py-2 small">
+                <div class="container d-flex flex-column flex-md-row justify-content-between">
+                    <p class="mb-0">Telefonos y Horarios de Atencion al cliente</p>
+                    <p class="mb-0">Horario Lun-Vie 8am - 5pm</p>
+                    <p class="mb-0">Tel(SPS): 9878-3448</p>
+                    <p class="mb-0">Tel(SPS): 8547-4687</p>
                 </div>
             </section>
-            <nav>
-                <a href=""><img src="" alt=""></a>
+            <nav class="navbar navbar-dark navbar-expand-lg flex-grow-1 py-3">
+                <a class="navbar-brand fw-bold fs-4" href="index.html"><img src="" alt=""></a>
 
-                <button type="button">boton movil</button>
+                <button type="button" class="navbar-toggler border-0 text-white" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">&#9776;</button>
 
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="catalogo.html">Catalogo</a></li>
-                    <li><a href="ofertas.html">Ofertas del Mes</a></li>
-                    <li><a href="cotizaciones.html">Cotizaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                <ul class="collapse navbar-collapse navbar-nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link px-3 text-white active fw-bold" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white active fw-bold" href="catalogo.html">Catalogo</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white active fw-bold" href="ofertas.html">Ofertas del Mes</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white active fw-bold" href="cotizaciones.html">Cotizaciones</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-white active fw-bold" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="">Cotizar por WahatsApp</a>
+            <a class="btn btn-success rounded-pill px-4 fw-bold m-2 shadow-sm" href="">Cotizar por WahatsApp</a>
         </header>
         <main>
             <div>
@@ -233,23 +236,92 @@
                     <a href="ofertas.html">Ver Ofertas</a>
                 </div>
             </div>
-        </main>
-        <footer>
+
+                        <div>
+                <h2>Tabla Comparativa de Especificaciones Técnicas</h2>
+ 
             <div>
-                <h3>DEINSA Honduras</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Equipo Industrial</th>
+                            <th>Tensión Nominal</th>
+                            <th>Capacidad</th>
+                            <th>Norma Técnica</th>
+                            <th>Estado de Homologación ENEE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TRF-150</td>
+                            <td>Transformador Pad-Mounted 150 kVA</td>
+                            <td>13,800 V</td>
+                            <td>150 kVA</td>
+                            <td>IEEE</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>PSL-580</td>
+                            <td>Panel Solar TOPCon 580W</td>
+                            <td>44 V</td>
+                            <td>580 W</td>
+                            <td>UL</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>INV-15H</td>
+                            <td>Inversor Híbrido 15 kW</td>
+                            <td>220 V</td>
+                            <td>15 kW</td>
+                            <td>IEEE</td>
+                            <td><span class="estado pendiente">En trámite</span></td>
+                        </tr>
+                        <tr>
+                            <td>ARR-75</td>
+                            <td>Arrancador Suave 75 HP</td>
+                            <td>480 V</td>
+                            <td>75 HP</td>
+                            <td>UL</td>
+                            <td><span class="estado aprobado">Aprobado</span></td>
+                        </tr>
+                        <tr>
+                            <td>CAB-400</td>
+                            <td>Cable de Cobre 4/0 AWG</td>
+                            <td>600 V</td>
+                            <td>230 A</td>
+                            <td>ASTM</td>
+                            <td><span class="estado rechazado">No homologado</span></td>
+                        </tr>
+                        <tr>
+                            <td>CDC-225</td>
+                            <td>Centro de Carga NEMA 3R</td>
+                            <td>240 V</td>
+                            <td>225 A</td>
+                            <td>UL</td>
+                            <td><span class="estado pendiente">En trámite</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="bg-dark text-light text-center py-5 mt-auto border-top">
+            <div class="mb-3">
+                <h3 class="h5 fw-bold">DEINSA Honduras</h3>
                 <p>Boulevard del Norte, San Pedro Sula - Tel: 9878-3448</p>
                 <p>Anillo Periférico, Tegucigalpa - Tel: 8547-4687</p>
                 <p>Horario: Lun-Vie 8am - 5pm</p>
             </div>
-            <div>
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <div class="mb-3">
+                <h3 class="h5 fw-bold">Redes Sociales</h3>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="link-light" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+                    <li class="list-inline-item"><a class="link-light" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li class="list-inline-item"><a class="link-light" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
                 </ul>
             </div>
-            <p>&copy; 2026 DEINSA Honduras. Todos los derechos reservados.</p>
+            <p class="small mb-0">&copy; 2026 DEINSA Honduras. Todos los derechos reservados.</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
